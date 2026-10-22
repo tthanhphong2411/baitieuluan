@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ - Tự Do Cà Phê</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+<div class="contact-container">
+    <header class="contact-header">
+        <div class="logo-wrapper">
+            <h2>☕ TỰ DO CÀ PHÊ</h2>
+        </div>
+        <p class="slogan">Tự do theo cách của bạn</p>
+    </header>
+    
+    <div class="info-section">
+        <div class="info-item clickable" onclick="copyText('0799882116')">
+            <strong>📞 Điện thoại (Bấm để copy)</strong>
+            <span id="phone-num">079 988 2116</span>
+            <span class="tooltip" id="myTooltip">Sao chép!</span>
+        </div>
+        
+        <div class="info-item">
+            <strong>🌐 Fanpage</strong>
+            <a href="hhttps://www.facebook.com/tudocaphe.vn?mibextid=wwXIfr&rdid=zAgiNqVka321XSHX&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1SVchKAU3A%2F%3Fmibextid%3DwwXIfr</a>
+        </div>
+        
+        <div class="info-item full-width">
+            <strong>📍 Địa chỉ</strong>
+            <p>Số 61 Đường số 27 P.Tân Sơn Nhì TPHCM</p>
+        </div>
+    </div>
+
+    <div class="chat-buttons">
+        <a href="https://zalo.me/sdt-cua-ban" class="chat-btn zalo" target="_blank">Chat Zalo</a>
+        <a href="https://m.me/tudocaphe" class="chat-btn messenger" target="_blank">Messenger</a>
+    </div>
+
+    <div class="map-container">
+        <iframe src="https://maps.app.goo.gl/7EN8G1mex6YWmKjs6?g_st=iz" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+</div>
+
+<script>
+    function copyText(text) {
+        navigator.clipboard.writeText(text);
+        var tooltip = document.getElementById("myTooltip");
+        tooltip.innerHTML = "Đã sao chép!";
+        setTimeout(() => { tooltip.innerHTML = "Sao chép!"; }, 2000);
+    }
+</script>
+
+</body>
+</html>

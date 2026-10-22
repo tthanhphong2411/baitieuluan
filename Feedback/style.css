@@ -1,0 +1,147 @@
+:root {
+    --bg-green: #3a5b32;      
+    --paper-cream: #f6efe1;   
+    --retro-red: #a32c21;     
+    --dark-text: #2c3e2d;     
+    --gold: #dfb33d;          
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-green);
+    
+    background-image: linear-gradient(90deg, rgba(255,255,255,.05) 50%, transparent 50%);
+    background-size: 40px 40px;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.feedback-container {
+    background-color: var(--paper-cream);
+    width: 90%;
+    max-width: 450px;
+    padding: 40px 30px;
+    border-radius: 4px; 
+    box-shadow: 12px 12px 0px rgba(0, 0, 0, 0.15);
+    border: 3px solid var(--dark-text);
+    position: relative;
+}
+
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo-box {
+    display: inline-block;
+    border: 2px solid var(--dark-text);
+    padding: 5px 15px;
+    margin-bottom: 15px;
+}
+
+.logo-text {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.2rem;
+    color: var(--bg-green);
+    display: block;
+    line-height: 1;
+}
+
+.logo-text .star {
+    color: var(--retro-red);
+    font-size: 1.5rem;
+    vertical-align: middle;
+}
+
+.sub-logo {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+    color: var(--retro-red);
+    letter-spacing: 4px;
+}
+
+h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.4rem;
+    color: var(--dark-text);
+    margin: 10px 0;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+
+.rating-box {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.rating-box p {
+    font-weight: 700;
+    color: var(--bg-green);
+    margin-bottom: 8px;
+}
+
+.stars-input {
+    font-size: 2rem;
+    color: var(--gold);
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+
+
+.input-field {
+    margin-bottom: 20px;
+}
+
+.input-field label {
+    display: block;
+    font-weight: 700;
+    font-size: 0.85rem;
+    color: var(--dark-text);
+    margin-bottom: 5px;
+}
+
+.input-field input, 
+.input-field textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid var(--bg-green);
+    background: transparent;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.input-field textarea {
+    height: 100px;
+    resize: none;
+}
+
+.submit-btn {
+    width: 100%;
+    background-color: var(--bg-green);
+    color: var(--paper-cream);
+    border: none;
+    padding: 15px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: 2px solid var(--dark-text);
+}
+
+.submit-btn:hover {
+    background-color: var(--retro-red);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+}

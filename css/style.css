@@ -1,0 +1,67 @@
+:root {
+    --primary-green: #385d32;
+    --accent-red: #b22222;
+    --vintage-cream: #fdf5e6;
+    --vintage-yellow: #f4c430;
+}
+
+body {
+    background-color: var(--vintage-cream);
+    color: var(--primary-green);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+header {
+    background: var(--primary-green);
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-menu ul {
+    display: flex;
+    justify-content: center;
+    list-group: none;
+    padding: 0;
+}
+
+.nav-menu ul li a {
+    color: var(--vintage-cream);
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: radial-gradient(circle, var(--vintage-cream) 0%, #e8dec7 100%);
+}
+
+.main-logo {
+    max-width: 300px;
+    border-radius: 50%;
+    border: 5px solid var(--primary-green);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.star-rating { color: var(--vintage-yellow); cursor: pointer; }
+.card {
+    background: white;
+    border: 2px solid var(--primary-green);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+.btn-contact {
+    display: inline-block;
+    background: var(--accent-red);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}

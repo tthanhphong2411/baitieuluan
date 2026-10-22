@@ -1,0 +1,156 @@
+:root {
+    --color-primary: #3c523c;    
+    --color-secondary: #9c2b2a;  
+    --color-accent: #e8c65c;     
+    --color-bg-paper: #fdfaf0;   
+    --color-border: #d4a373;     
+    --color-white: #ffffff;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--color-bg-paper);
+    
+    background-image: url("https://www.transparenttextures.com/patterns/p6.png");
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-container {
+    max-width: 850px;
+    width: 100%;
+    background: var(--color-white);
+    padding: 50px 40px;
+    border-radius: 4px; /* Bo góc nhẹ kiểu cổ điển */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    position: relative;
+    border: 1px solid var(--color-border);
+    overflow: hidden;
+}
+.contact-header {
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+    padding-top: 20px;
+}
+.contact-header::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150%;
+    height: 100px;
+    background: repeating-linear-gradient(
+        45deg,
+        var(--color-secondary) 0px,
+        var(--color-secondary) 15px,
+        var(--color-accent) 15px,
+        var(--color-accent) 30px,
+        var(--color-primary) 30px,
+        var(--color-primary) 45px,
+        var(--color-bg-paper) 45px,
+        var(--color-bg-paper) 60px
+    );
+    opacity: 0.15;
+    z-index: 0;
+}
+
+.contact-header h2 {
+    color: var(--color-primary);
+    font-size: 2.5rem;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    position: relative;
+    z-index: 1;
+    text-shadow: 1px 1px 0px var(--color-accent);
+}
+
+.slogan {
+    color: var(--color-secondary);
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.info-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-bottom: 35px;
+}
+
+.info-item {
+    background: var(--color-bg-paper);
+    padding: 20px;
+    border: 2px solid var(--color-primary);
+    border-radius: 0; 
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.info-item::after {
+    content: '★';
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    color: var(--color-secondary);
+    font-size: 0.8rem;
+}
+
+.info-item:hover {
+    background: var(--color-white);
+    transform: scale(1.02);
+    box-shadow: 5px 5px 0px var(--color-accent);
+}
+
+.info-item strong {
+    display: block;
+    color: var(--color-primary);
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+    border-bottom: 1px dashed var(--color-secondary);
+    padding-bottom: 5px;
+}
+
+.info-item a, .info-item span {
+    color: var(--color-secondary);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.full-width {
+    grid-column: 1 / -1;
+}
+
+.map-container {
+    width: 100%;
+    height: 350px;
+    border: 5px solid var(--color-primary);
+    outline: 2px solid var(--color-accent); 
+    border-radius: 2px;
+    margin-top: 20px;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    filter: sepia(20%) contrast(110%); 
+}
+
+@media (max-width: 600px) {
+    .info-section {
+        grid-template-columns: 1fr;
+    }
+    .contact-container {
+        padding: 30px 20px;
+    }
+}
